@@ -41,7 +41,7 @@ h1 span {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
+  color: light-dark(#292929, #f0f0f0);
   margin-bottom: 16px;
 }
 .project-description {
@@ -51,15 +51,15 @@ h1 span {
   line-height: 1.25;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: #292929;
+  color: light-dark(#292929, #f0f0f0);
   margin-bottom: 16px;
 }
 .link-container {
   border-radius: 8px;
   padding: 12px 24px;
-  max-width: 125px;
+  width: 128px;
   height: 48px;
-  background: #e4e5e6;
+  background: light-dark(#e4e5e6, #2a2d32);
   align-self: flex-end;
   text-align: center;
 }
@@ -70,10 +70,10 @@ h1 span {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
+  color: light-dark(#292929, #f0f0f0);
 }
 .visit-arrow {
-  stroke: #292929;
+  stroke: #00b068;
 }
 .load-more-btn {
   position: relative;
@@ -87,8 +87,8 @@ h1 span {
   line-height: 1.55556;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  background-color: #f0f0f0;
-  color: #292929;
+  background-color: transparent;
+  color: light-dark(#292929, #f0f0f0);
 }
 .load-more-btn::after {
   position: absolute;
