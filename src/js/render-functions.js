@@ -1,5 +1,5 @@
-export // function creating the projects section template
-const projectsTemplate = projects => {
+// function creating the projects section template
+export const projectsTemplate = projects => {
   return projects
     .map(project => {
       const { title, url1, url2, technologies } = project;
@@ -22,7 +22,7 @@ const projectsTemplate = projects => {
           <a class="visit-link" href="#">
             visit
             <svg class="visit-arrow" width="14" height="14">
-              <use href="../img/icons.svg#visit-arrow"></use>
+              <use href="../../img/icons.svg#visit-arrow"></use>
             </svg>
           </a>
         </div>

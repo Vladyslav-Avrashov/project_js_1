@@ -11,7 +11,7 @@
   color: #292929;
 }
 .projects-header-span {
-  color: #00b068;
+  color: light-dark(#00b068, #14c57c);
 }
 .my-projects {
   display: flex;

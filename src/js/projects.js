@@ -30,7 +30,7 @@ const onLoadMoreBtn = () => {
     const height = refs.projectsList.getBoundingClientRect().height;
 
     window.scrollBy({
-      top: height * 10,
+      top: height,
       behavior: 'smooth',
     });
   }, 0);
