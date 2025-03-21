@@ -47,7 +47,7 @@ body {
   flex-direction: column;
   height: 100vh;
   font-family: sans-serif;
-  background-color: light-dark(#e4e5e6, #303030);
+  background-color: light-dark(#f0f0f0, #303030);
 }
 
 main {
