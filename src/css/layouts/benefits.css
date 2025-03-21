@@ -15,6 +15,7 @@
 
 .benefits-list {
   font-family: 'Poppins', sans-serif;
+  color: light-dark(#292929, #f0f0f0);
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -39,10 +40,9 @@
 .benefits-title {
   font-weight: 400;
   font-size: 20px;
-  line-height: 1.6;
+  line-height: 1.55;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
   margin-bottom: 16px;
 }
 
@@ -51,13 +51,12 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
 }
 
 @media screen and (min-width: 768px) {
   .title {
     font-size: 108px;
-    line-height: 1.15;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     margin-bottom: 0;
   }
@@ -74,13 +73,17 @@
   .benefits-list-item {
     flex-basis: calc((100% - 32px) / 2);
   }
+
+  .benefits-title {
+    line-height: 1.6;
+  }
 }
 
 @media screen and (min-width: 1280px) {
   .title {
+    width: 686px;
     padding-top: 170px;
     margin-bottom: -96px;
-    width: 686px;
   }
 
   .benefits-list-item {
