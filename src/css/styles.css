@@ -3,7 +3,6 @@
 @import url('./base/common.css');
 @import url('./base/container.css');
 @import url('./base/visually-hidden.css');
-@import url('./my-projects-styles.css');
 
 /* LAYOUTS */
 @import url('./layouts/header.css');
