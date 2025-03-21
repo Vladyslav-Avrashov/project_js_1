@@ -90,6 +90,7 @@ section {
 .swiper-button-next:disabled {
   stroke: light-dark(#e4e5e6, #2a2d32);
   border-color: light-dark(#e4e5e6, #2a2d32);
+  cursor: not-allowed;
 }
 
 .review-not-found {
