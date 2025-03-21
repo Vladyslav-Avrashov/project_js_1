@@ -73,7 +73,7 @@
   color: light-dark(#292929, #f0f0f0);
 }
 .visit-arrow {
-  stroke: #00b068;
+  stroke: light-dark(#00b068, #009156);
 }
 .load-more-btn {
   position: relative;
