@@ -61,3 +61,22 @@ main {
 .theme-dark {
   color-scheme: dark;
 }
+
+.section {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-bottom: 62px;
+    padding-top: 62px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section {
+    padding-bottom: 82px;
+    padding-top: 82px;
+  }
+}
