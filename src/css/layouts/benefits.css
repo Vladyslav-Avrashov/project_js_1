@@ -1,0 +1,123 @@
+.benefits-section {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.title {
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+  margin-bottom: 40px;
+}
+
+.highlight {
+  color: #00b068;
+}
+
+.benefits-list {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.benefits-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  background: #bcdfd1;
+  margin-bottom: 16px;
+}
+
+.benefits-icon {
+  fill: transparent;
+  stroke: #00b068;
+}
+
+.benefits-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+  margin-bottom: 16px;
+}
+
+.benefits-subtitle {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 108px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    margin-bottom: 0;
+  }
+
+  .benefits-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .benefits-list-item {
+    width: 336px;
+  }
+
+  .benefits-list-item:first-child {
+    margin-left: 368px;
+  }
+  .benefits-section {
+    padding-bottom: 62px;
+    padding-top: 62px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .title {
+    margin-bottom: 120px;
+  }
+
+  .benefits-list-item {
+    width: 384px;
+  }
+
+  .benefits-list-item:first-child {
+    margin-left: 832px;
+  }
+
+  .title {
+    margin-bottom: -96px;
+    width: 686px;
+  }
+  .benefits-background {
+    background-image: url(../../img/decor-bg-3-light-x1.png);
+    background-repeat: no-repeat;
+    background-position: top -30px right 15px;
+    background-size: 526px 408px;
+    overflow: visible;
+  }
+  .benefits-section {
+    padding-bottom: 82px;
+    padding-top: 82px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+  .benefits-background {
+    background-image: url(../../img/decor-bg-3-light-x2.png);
+  }
+}
