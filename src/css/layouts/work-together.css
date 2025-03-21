@@ -1,20 +1,25 @@
 @import "izitoast/dist/css/iziToast.min.css";
-.contacts{
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
 @media screen and (min-width: 768px) {
-    .contacts{
-        margin-top: 124px;
-        margin-bottom: 124px;
+    .section_background{
+        background-image: url(../../img/work-together/bg_work_together_laptop.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 336px 260px; 
     }
   }
 @media screen and (min-width: 1280px) {
-    .contacts {
-        margin-top: 164px;
-        margin-bottom: 164px;
+    .section_background{
+        background-image: url(../../img/work-together/bg_work_together_desk.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 526px 408px; 
     }
 }
+@media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+    .theme-light .benefits-background {
+      background-image: url(../../img/work-together/bg_work_together_laptopx2.png);
+    }
+}  
 .contacts_title{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 400;
