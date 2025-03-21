@@ -25,19 +25,20 @@ const onLoadMoreBtn = () => {
   const projectsCopy = projects.slice(startIndex, endIndex);
   const projectTemplate = projectsTemplate(projectsCopy);
   refs.projectsList.insertAdjacentHTML('beforeend', projectTemplate);
+
+  setTimeout(() => {
+    const height = refs.projectsList.getBoundingClientRect().height;
+
+    window.scrollBy({
+      top: height * 10,
+      behavior: 'smooth',
+    });
+  }, 0);
   if (endIndex >= projects.length) {
     refs.loadMoreBtn.classList.add('visually-hidden');
     refs.loadMoreBtn.removeEventListener('click', onLoadMoreBtn);
     return;
   }
-  setTimeout(() => {
-    const height = refs.projectsList.getBoundingClientRect().height;
-
-    window.scrollBy({
-      top: height,
-      behavior: 'smooth',
-    });
-  }, 0);
 };
 // attaching the event listener to the loadMore button
 refs.loadMoreBtn.addEventListener('click', onLoadMoreBtn);
