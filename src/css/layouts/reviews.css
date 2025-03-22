@@ -27,6 +27,7 @@ section {
   padding: 32px;
   background-color: light-dark(#e4e5e6, #2a2d32);
 }
+
 .swiper-description {
   font-family: 'Poppins', sans-serif;
   width: 256px;
@@ -56,6 +57,7 @@ section {
   color: light-dark(#292929, #f0f0f0);
 }
 .swiper-buttons {
+
   display: flex;
   justify-content: flex-end;
   column-gap: 16px;
