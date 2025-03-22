@@ -15,7 +15,3 @@
 @import url('./layouts/reviews.css');
 @import url('./layouts/work-together.css');
 @import url('./layouts/footer.css');
-
-h1 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
