@@ -3,7 +3,7 @@ import { refs } from './reviews';
 const createMarkup = ({ author, avatar_url, review }) => {
   return `
   <li class="swiper-slide">
-    <p class="swiper-description">${review}</p>
+    <p class="swiper-description" tabindex="-1">${review}</p>
     <div class="swiper-user-info">
       <img
         class="swiper-user-img"

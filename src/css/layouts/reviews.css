@@ -1,10 +1,6 @@
 @import 'izitoast/dist/css/iziToast.min.css';
 @import 'swiper/css';
 
-section {
-  padding: 40px 0;
-}
-
 .reviews-title {
   font-family: 'Impact', sans-serif;
   font-weight: 400;
@@ -27,6 +23,7 @@ section {
   padding: 32px;
   background-color: light-dark(#e4e5e6, #2a2d32);
 }
+
 .swiper-description {
   font-family: 'Poppins', sans-serif;
   width: 256px;
@@ -56,6 +53,7 @@ section {
   color: light-dark(#292929, #f0f0f0);
 }
 .swiper-buttons {
+
   display: flex;
   justify-content: flex-end;
   column-gap: 16px;
@@ -110,12 +108,6 @@ section {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 736px;
-  }
-  section {
-    padding: 62px 0;
-  }
   .reviews-title {
     font-size: 108px;
     line-height: 1.15;
@@ -131,12 +123,6 @@ section {
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1248px;
-  }
-  section {
-    padding: 82px 0;
-  }
   .reviews-title {
     margin-bottom: 80px;
   }
