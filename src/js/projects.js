@@ -27,7 +27,9 @@ const onLoadMoreBtn = () => {
   refs.projectsList.insertAdjacentHTML('beforeend', projectTemplate);
 
   setTimeout(() => {
-    const height = refs.projectsList.getBoundingClientRect().height;
+    const height = refs.projectsList
+      .querySelector('.project-card')
+      .getBoundingClientRect().height;
 
     window.scrollBy({
       top: height * 10,
