@@ -10,7 +10,7 @@ function validateEmail(email) {
     return valid.test(email);
 }
 
-export function emailValidation() {
+function emailValidation() {
 
     emailInput.addEventListener("input", function () {
         if (validateEmail(emailInput.value)) {
@@ -22,6 +22,8 @@ export function emailValidation() {
         }
     });
 }
+
+emailValidation();
 
 const sendMessage = async (event) => {
     event.preventDefault();
@@ -64,8 +66,6 @@ const sendMessage = async (event) => {
     }
 };
 
-btnSubmit.addEventListener("click", sendMessage);
-
 const ShowModal = (title, message) => {
     let backdrop = document.createElement("div");
     backdrop.classList.add("backdrop");
@@ -102,3 +102,5 @@ const ShowModal = (title, message) => {
         if (event.key === "Escape") closeModal();
     });
 };
+
+btnSubmit.addEventListener("click", sendMessage);
