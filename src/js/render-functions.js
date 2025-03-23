@@ -1,4 +1,5 @@
 // function creating the projects section template
+import { projectData } from './projects-data';
 export const projectsTemplate = projects => {
   return projects
     .map(project => {
