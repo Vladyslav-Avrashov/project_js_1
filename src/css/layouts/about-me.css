@@ -47,6 +47,7 @@
   color: light-dark(#292929, #f0f0f0);
 }
 .about-me-subtitle {
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 32px;
   line-height: 1.25;
@@ -119,7 +120,6 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    margin-bottom: 60px;
     column-gap: 32px;
     row-gap: 60px;
   }
@@ -167,18 +167,20 @@
   .theme-light .about-me-background {
     background-image: url(../../img/about-me/decor-bg-light-1.png);
     background-repeat: no-repeat;
-    background-position: top 700px right 225px;
+    background-position: top 700px right 15px;
     background-size: 384px 288px;
   }
 
   .theme-dark .about-me-background {
     background-image: url(../../img/about-me/decor-bg-dark-1.png);
     background-repeat: no-repeat;
-    background-position: top 700px right 225px;
+    background-position: top 700px right 15px;
     background-size: 384px 288px;
   }
   .about-me-content {
-    gap: 136px;
+    column-gap: 136px;
+    row-gap: 80px;
+    justify-content: flex-end;
   }
   .about-me-image {
     width: 384px;
@@ -190,6 +192,7 @@
   }
   .about-me-wrap {
     gap: 136px;
+    margin-left: 210px;
   }
   .about-me-education {
     width: 384px;
