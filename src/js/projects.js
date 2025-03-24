@@ -33,7 +33,7 @@ const onLoadMoreBtn = () => {
       .getBoundingClientRect().height;
 
     window.scrollBy({
-      top: height * 10,
+      top: height,
       behavior: 'smooth',
     });
   }, 0);
