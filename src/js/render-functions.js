@@ -4,15 +4,17 @@ export const projectsTemplate = projects => {
   return projects
     .map(project => {
       const { title, url1, url2, technologies } = project;
+      console.log(title, url1, url2, technologies);
       return `
       <li class="project-card">
         <picture>
           <source
             srcset="${url1} 1x, ${url2} 2x"
           />
+
           <img
             class="my-project-picture"
-            src="${url2} 2x"
+           src="${url2} "
             alt="${title}"
             loading="lazy"
           />
@@ -23,7 +25,7 @@ export const projectsTemplate = projects => {
           <a class="visit-link" href="#">
             visit
             <svg class="visit-arrow" width="14" height="14">
-              <use href="/img/icons.svg#visit-arrow"></use>
+              <use href="./img/icons.svg#visit-arrow"></use>
             </svg>
           </a>
         </div>
