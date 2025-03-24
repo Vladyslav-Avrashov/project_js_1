@@ -1,20 +1,20 @@
 export const projectData = [
   {
     title: 'Wallet webservice',
-    url1: './img/projectimages/manage-finances@1x.jpg',
-    url2: './img/projectimages/manage-finances@2x.jpg',
+    url1: '/project_js_1/img/projectimages/manage-finances@1x.jpg',
+    url2: '/project_js_1/img/projectimages/manage-finances@2x.jpg',
     technologies: 'React, JavaScript, Node JS, Git',
   },
   {
     title: 'Green harvest webservice',
-    url1: './img/projectimages/organic-vegetables@1x.jpg',
+    url1: '.project_js_1/img/projectimages/organic-vegetables@1x.jpg',
     url2: './img/projectimages/organic-vegetables@2x.jpg',
     technologies: 'React, JavaScript, Node JS, Git',
   },
   {
     title: 'English Exellence webservice',
-    url1: './img/projectimages/discover@1x.jpg',
-    url2: './img/projectimages/discover@2x.jpg',
+    url1: '.project_js_1/img/projectimages/discover@1x.jpg',
+    url2: 'project_js_1./img/projectimages/discover@2x.jpg',
     technologies: 'React, JavaScript, Node JS, Git',
   },
   {
