@@ -1,8 +1,8 @@
 import wallet1 from '../img/projectimages/manage-finances@1x.jpg';
 import wallet2 from '../img/projectimages/manage-finances@2x.jpg';
 
-import organic1 from '../img/projectimages/organic-vegetables@1x.jpg';
-import organic2 from '../img/projectimages/organic-vegetables@2x.jpg';
+import organic1 from '../img/projectimages/organic1x.jpg';
+import organic2 from '../img/projectimages/organic2x.jpg';
 
 import discover1 from '../img/projectimages/discover@1x.jpg';
 import discover2 from '../img/projectimages/discover@2x.jpg';
@@ -10,8 +10,8 @@ import discover2 from '../img/projectimages/discover@2x.jpg';
 import transforming1 from '../img/projectimages/transforming@1x.jpg';
 import transforming2 from '../img/projectimages/transforming@2x.jpg';
 
-import mimino1 from '../img/projectimages/mimino@@1x.jpg';
-import mimino2 from '../img/projectimages/mimino@2x.jpg';
+import mimino1 from '../img/projectimages/mimino1x.jpg';
+import mimino2 from '../img/projectimages/mimino2x.jpg';
 
 import traditions1 from '../img/projectimages/reviving-traditions@1x.jpg';
 import traditions2 from '../img/projectimages/reviving-traditions@2x.jpg';
