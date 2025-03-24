@@ -1,3 +1,4 @@
+import icon from '../img/icons.svg#visit-arrow';
 // function creating the projects section template
 
 export const projectsTemplate = projects => {
@@ -23,7 +24,7 @@ export const projectsTemplate = projects => {
           <a class="visit-link" href="#">
             visit
             <svg class="visit-arrow" width="14" height="14">
-              <use href="img/icons.svg#visit-arrow"></use>
+              <use href=${icon}></use>
             </svg>
           </a>
         </div>

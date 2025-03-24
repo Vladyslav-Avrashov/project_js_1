@@ -8,7 +8,6 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #292929;
-  background-color: rgb(98, 255, 0);
 }
 .projects-header-span {
   color: light-dark(#00b068, #14c57c);
