@@ -2,7 +2,7 @@ export const projectData = [
   {
     title: 'Wallet webservice',
     url1: '/img/projectimages/manage-finances@1x.jpg',
-    url2: '../img/projectimages/manage-finances@2x.jpg',
+    url2: './img/projectimages/manage-finances@2x.jpg',
     technologies: 'React, JavaScript, Node JS, Git',
   },
   {
