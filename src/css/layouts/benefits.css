@@ -82,7 +82,6 @@
 @media screen and (min-width: 1280px) {
   .title {
     width: 686px;
-    padding-top: 170px;
     margin-bottom: -96px;
   }
 
@@ -94,18 +93,22 @@
     margin-left: 832px;
   }
 
+  .benefits-background {
+    background-repeat: no-repeat;
+    background-position: top 50px right 20px;
+    background-size: 526px 408px;
+  }
+
   .theme-light .benefits-background {
     background-image: url(../../img/decor-bg-3-light-x1.png);
-    background-repeat: no-repeat;
-    background-position: top 50px right 15px;
-    background-size: 526px 408px;
   }
 
   .theme-dark .benefits-background {
     background-image: url(../../img/decor-bg-3-dark-x1.png);
-    background-repeat: no-repeat;
-    background-position: top 50px right 15px;
-    background-size: 526px 408px;
+  }
+
+  #benefits.section {
+    padding-top: 164px;
   }
 }
 
