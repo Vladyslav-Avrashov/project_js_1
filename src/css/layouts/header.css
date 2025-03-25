@@ -1,0 +1,235 @@
+.main-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.main-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  display: block;
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #292929;
+  text-decoration: none;
+}
+
+.header-logo-style {
+  color: #00b068;
+}
+
+.header-darkmode-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.darkmode-toggle {
+  height: 24px;
+}
+
+.darkmode-toggle-label {
+  position: relative;
+  display: block;
+  width: 48px;
+  height: 24px;
+  border-radius: 16px;
+  background: #e4e5e6;
+  cursor: pointer;
+  top: -18px;
+}
+
+.darkmode-toggle-label::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  width: 18px;
+  height: 18px;
+  background: #00b068;
+  border-radius: 180px;
+  transition: left 0.3s;
+}
+
+.darkmode-toggle-input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.darkmode-toggle-input:checked + .darkmode-toggle-label {
+  background: #292929;
+}
+
+.darkmode-toggle-input:checked + .darkmode-toggle-label::after {
+  left: calc(48px - 20px);
+}
+
+.nav-menu-list {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-link {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+  text-decoration: none;
+}
+
+.open-mobile-menu-btn {
+  border: none;
+  padding: 0;
+  line-height: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.modal-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 100;
+  transition: opacity 0.3s ease;
+}
+
+.modal-box.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-box .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 280px;
+  height: 95%;
+  padding: 20px 16px 0 16px;
+  background-image: url('../../img/header/header-menu-bg.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.modal-box.is-open .container {
+  transform: translateX(0);
+}
+
+.header-menu-wraper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-mobile-menu-btn {
+  border: none;
+  padding: 0;
+  line-height: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.mobile-menu-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.mobile-menu-nav-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 91px;
+  color: #292929;
+  text-decoration: none;
+  transition: color 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-nav-item-link:hover,
+.mobile-menu-nav-item-link:focus,
+.mobile-menu-nav-item-link:active {
+  color: #00b068;
+}
+
+@media screen and (max-width: 767px) {
+  .modal-box .container {
+    position: static;
+    margin: 0 auto;
+    transform: translateX(100%);
+  }
+
+  .modal-box.is-open .container {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .open-mobile-menu-btn {
+    display: none;
+  }
+
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-logo {
+    font-size: 32px;
+  }
+
+  .header-darkmode-wrap {
+    gap: 24px;
+  }
+
+  .nav-menu-list {
+    display: flex;
+    column-gap: 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header-darkmode-wrap {
+    gap: 40px;
+  }
+}
