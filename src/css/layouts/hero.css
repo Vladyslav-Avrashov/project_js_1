@@ -1,51 +1,79 @@
-.hero{
-  padding-top: 168px;
+ .hero{
 
-    /*background-image: url(../../img/decor.png);*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: top 30px right 215px;*/
-    /*background-size: 356px 276px;*/
-
-
-    background-image: url('../../img/decor.png'), url('../../img/decor-1.png');
-    background-position: top 30px right 215px, top 262px right 1177px;
-    background-size:  356px 276px,  356px 276px;
+    background-position: bottom 76px left 146px, top 10px right 24px;
     background-repeat: no-repeat, no-repeat;
+   background-size:  356px 276px,  356px 276px;
+}
+
+ .theme-light .hero {
+   background-image: url('../../img/decor.png'), url('../../img/decor-1.png');
+
+ }
+
+ .theme-dark .hero {
+   background-image: url('../../img/decor-1-black.png'), url('../../img/decor-black.png');
+
+ }
+ @media (max-width:1280px) {
+   .hero{
+     background-position: bottom 117px left 188px, top 104px right 19px;
+
+   }
+ }
+ @media (max-width:767px) {
+   .hero{
+     background-position: bottom -127px left 2px, top 78px right -1px ;
+   }
+ }
+ /*//////////////////////////////////////////////*/
 
 
-}
-@media (min-width: 768px) {
-  .hero{
-    padding-top: 72px;
+
+
+@media screen and (min-resolution: 192dpi) {
+  .theme-light .hero {
+    background-image: url('../../img/lite2x.png'), url('../../img/lite2x1.png');
+
+  }
+
+  .theme-dark .hero {
+    background-image: url('../../img/decor-12x-black.png'), url('../../img/decor2x-black.png');
+
   }
 }
-@media(min-width: 320px){
-  .hero{
-    padding-top: 96px;
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .hero-photo{
   display: flex;
   align-items: center;
   gap: 38px;
-}
+  padding-top: 184px;
 
+}
 /*////////////////////////////////////////////////////////////////////*/
 .hero-name{
   font-weight: bold;
-
 }
-@media (min-width: 320px){
+@media (min-width: 1px){
   .hero-name{
-    /*color: light-dark(yellow, green);*/
-    color: black;
+    color: light-dark(#292929, #F0F0F0);
+
     font-weight: 400;
     font-size: 64px;
     line-height: 125%;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
   }
 }
 @media (min-width: 640px){
@@ -64,7 +92,7 @@
   height: 108px;
 border-radius: 3px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1270px) {
 .photo{
   display: none;
 }
@@ -72,36 +100,35 @@ border-radius: 3px;
 /*////////////////////////////////////////////////////////////////////*/
 
 
-@media (min-width:640px){
+@media (min-width: 1px) {
   .hero-name-under{
-    font-size: 136px;
-    line-height: 115%;
-    letter-spacing: 0.01em;
-  }
-}
-@media (min-width: 320px) {
-  .hero-name-under{
-
     font-weight: 400;
     font-size: 64px;
     line-height: 125%;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #00B068;
-    margin-bottom: 40px;
+    color: light-dark(#00B068, #14C57C);
   }
 
 }
 /*////////////////////////////////////////////////////////////////////*/
-/*.hero-button-text{*/
-/*  display: flex;*/
-/*flex-direction: row;*/
-/*}*/
+@media (min-width:768px){
+  .hero-name-under{
+
+    font-weight: 400;
+    font-size: 136px;
+    line-height: 115%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+
+  }
+}
+
 /*///////////////////////////////MOBILE FIRST/////////////////////////////////////*/
 .hero-button-text{
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: 80px;
   margin-bottom: 72px;
 }
 @media (min-width: 768px) {
@@ -112,31 +139,11 @@ border-radius: 3px;
 @media (min-width: 1280px) {
   .hero-button-text{
 flex-direction: row;
+    padding-bottom: 132px;
   }
 }
 /*////////////////////////////////////////////////////////////////////*/
-.hero-button{
-  width: 320px;
-  height: 92px;
 
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 156%;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: black;
-}
-@media (min-width: 768px) {
-  .hero-button{
-    width: 416px;
-    height: 96px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 160%;
-
-
-  }
-}
 
 
 /*////////////////////////////////////////////////////////////////////*/
@@ -149,7 +156,7 @@ flex-direction: row;
   line-height: 156%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: black;
+  color: light-dark(#292929,#F0F0F0);
 
 }
 @media (min-width:768px){
@@ -173,7 +180,7 @@ flex-direction: row;
 
 /*////////////////////////////////////////////////////////////////////*/
 .in-hero-text{
-  color: #00B068;
+  color: light-dark(#00B068,#14C57C);
 }
 /*////////////////////////////////////////////////////////////////////*/
 .hero-social-media-links{
@@ -183,8 +190,9 @@ display: flex;
  text-align: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  background-color: #E4E5E6;
+  background-color: light-dark(#E4E5E6,#2A2D32);
 }
+
 @media (min-width:768px){
   .hero-social-media-links{
 
@@ -199,10 +207,16 @@ flex-direction: row;
 
 /*////////////////////////////////////////////////////////////////////*/
 .hero-media-item{
-  color : black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+color: light-dark(#292929,#F0F0F0);
 }
 /*////////////////////////////////////////////////////////////////////*/
 .hero-scroll{
+  position: absolute;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -213,64 +227,61 @@ flex-direction: row;
   line-height: 160%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-color: black;
-  padding: 60px 60px 60px 60px;
+color: light-dark(#292929,#F0F0F0);
+  left: -143px; /* Изначально видимый */
+  transition: left 0.4s ease-in-out;
+padding-top: 32px;
+  padding-bottom: 32px;
 }
-/*////////////////////////////////////////////////////////////////////*/
 .hero-scroll-focus{
+  position: relative;
   border-radius: 16px;
   width: 261px;
   height: 96px;
-  background-color: #BCDFD1;
+  background-color: light-dark(#BCDFD1,#14C57C);
   display: flex;
+
   align-items: center;
   justify-content: center;
 }
 
-.hero-scroll {
-  position: absolute;
-  left: 249px; /* Изначально видимый */
-  transition: left 0.4s ease-in-out;
-}
+  .hero-scroll-focus:hover .hero-scroll,
+  .hero-scroll-focus:hover .hero-scroll {
+    left: 9px; /* Смещаем влево */
 
-.hero-scroll-focus:hover .hero-scroll,
-.hero-scroll-focus:focus .hero-scroll {
-  left: 140px; /* Смещаем влево */
-}/*////////////////////////////////////////////////////////////////////*/
-/*////////////////////////////////////////////////////////////////////*/
+    font-size: 18px;
+    stroke: black;
+  }
 
-/* Для планшетов (768px и меньше) */
+
+
 @media (min-width: 767px) {
-  .hero-scroll-focus{
+  .hero-scroll-focus {
+    margin-left: 155px;
     border-radius: 16px;
     width: 261px;
     height: 96px;
-    background-color: #BCDFD1;
+    background-color: light-dark(#BCDFD1,#14C57C);
     display: flex;
     align-items: center;
     justify-content: center;
-
+    margin-bottom: 40px;
   }
 
-  .hero-scroll {
-    position: absolute;
-    left: -57px; /* Изначально видимый */
-    transition: left 0.4s ease-in-out;
-  }
 
-  .hero-scroll-focus:hover .hero-scroll,
-  .hero-scroll-focus:focus .hero-scroll {
-    left: 140px; /* Смещаем влево */
+  .hero-scroll-focus:hover,
+  .hero-scroll-focus:hover {
+    background-color: light-dark(#BCDFD1,#14C57C);
+
   }
 }
-/*////////////////////////////////////////////////////////////////////*/
-/*////////////////////////////////////////////////////////////////////*/
 
+/*///////////////////////////////////////////////////////////////////!*!//////////////////////////////////////////////////////////////////!**/
 @media (max-width: 767px) {
 
   .hero-scroll {
     position: absolute;
-    left: 120px; /* Изначально видимый */
+    left: -144px; /* Изначально видимый */
     transition: left 0.4s ease-in-out;
   }
   .hero-scroll-focus {
@@ -278,11 +289,8 @@ color: black;
     width: 165px;
     height: 92px;
     margin-left: auto;
+    margin-bottom: 40px;
   }
 
-
-  .hero-scroll-focus:hover .hero-scroll,
-  .hero-scroll-focus:focus .hero-scroll {
-    left: 10px; /* Смещаем влево */
-  }
 }
+
