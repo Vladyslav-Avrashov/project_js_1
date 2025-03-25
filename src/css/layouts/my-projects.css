@@ -143,7 +143,7 @@
   .project-cards-list {
     align-items: center;
   }
-  #projects section {
+  #projects .section {
     padding-bottom: 0;
   }
 }
