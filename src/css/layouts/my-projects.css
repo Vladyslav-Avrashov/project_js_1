@@ -56,12 +56,15 @@
 }
 .link-container {
   border-radius: 8px;
-  padding: 12px 24px;
+
   width: 128px;
   height: 48px;
   background: light-dark(#e4e5e6, #2a2d32);
   align-self: flex-end;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .visit-link {
   font-family: 'Poppins', sans-serif;
@@ -71,6 +74,7 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: light-dark(#292929, #f0f0f0);
+  padding: 12px 32px;
 }
 .visit-arrow {
   stroke: #00b068;
@@ -128,4 +132,7 @@
   .project-cards-list {
     align-items: center;
   }
+}
+.my-projects section {
+  padding-bottom: 0;
 }
