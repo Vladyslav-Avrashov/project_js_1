@@ -24,7 +24,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: light-dark(#292929, #f0f0f0);
-  width: 224px;
+  max-width: 224px;
 }
 
 .ac-text {
@@ -43,6 +43,7 @@
 }
 
 .faq-icon {
+  flex-shrink: 0;
   fill: none;
   stroke: light-dark(#292929, #f0f0f0);
   transition: transform 0.5s ease-in-out;
