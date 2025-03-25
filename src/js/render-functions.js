@@ -5,7 +5,7 @@ export const projectsTemplate = projects => {
   return projects
     .map(project => {
       const { title, url1, url2, technologies } = project;
-      console.log(title, url1, url2, technologies);
+
       return `
       <li class="project-card">
         <picture>
