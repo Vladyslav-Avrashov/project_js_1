@@ -95,3 +95,7 @@ flex-direction: row;
   text-align: end;
   }
 }
+.footer-media-item:hover,
+.footer-media-item:focus {
+  color: light-dark( #00B068, #14C57C);
+}

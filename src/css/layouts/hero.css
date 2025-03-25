@@ -155,7 +155,7 @@ flex-direction: row;
 
 /*////////////////////////////////////////////////////////////////////*/
 .hero-text{
-  width: 320px;
+  max-width: 320px;
   height: 140px;
 
   font-weight: 400;
@@ -288,4 +288,7 @@ padding-top: 32px;
     margin-bottom: 40px;
   }
 }
-
+.hero-media-item:hover,
+.hero-media-item:focus {
+  color: light-dark( #00B068, #14C57C);
+}
