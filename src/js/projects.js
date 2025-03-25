@@ -1,4 +1,5 @@
-import projects from '../json/projects.json';
+// import projects from '../json/projects.json';
+import { projectData } from './projects-data';
 import { projectsTemplate } from './render-functions';
 // searching for the elements
 const refs = {
@@ -11,7 +12,7 @@ let endIndex = 3;
 
 // loading the initial state(3 first projects)
 const loadInitialProjects = () => {
-  const projectsCopy = projects.slice(startIndex, endIndex);
+  const projectsCopy = projectData.slice(startIndex, endIndex);
   const projectTemplate = projectsTemplate(projectsCopy);
   refs.projectsList.innerHTML = projectTemplate;
 };
@@ -22,19 +23,21 @@ loadInitialProjects();
 const onLoadMoreBtn = () => {
   startIndex += 3;
   endIndex += 3;
-  const projectsCopy = projects.slice(startIndex, endIndex);
+  const projectsCopy = projectData.slice(startIndex, endIndex);
   const projectTemplate = projectsTemplate(projectsCopy);
   refs.projectsList.insertAdjacentHTML('beforeend', projectTemplate);
 
   setTimeout(() => {
-    const height = refs.projectsList.getBoundingClientRect().height;
+    const height = refs.projectsList
+      .querySelector('.project-card')
+      .getBoundingClientRect().height;
 
     window.scrollBy({
-      top: height * 10,
+      top: height,
       behavior: 'smooth',
     });
   }, 0);
-  if (endIndex >= projects.length) {
+  if (endIndex >= projectData.length) {
     refs.loadMoreBtn.classList.add('visually-hidden');
     refs.loadMoreBtn.removeEventListener('click', onLoadMoreBtn);
     return;
