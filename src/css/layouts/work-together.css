@@ -119,7 +119,12 @@
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.05em;
-    color: light-dark(#292929, #f0f0f0);;
+    color: light-dark(#292929, #f0f0f0);
+}
+
+.info_contact_link:hover, 
+.info_contact_link:focus{
+    color: light-dark(#00B068, #14C57C);;;
 }
 .content_form form{
     display: flex;
@@ -223,11 +228,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 96vw;
     max-width: 320px;
     height: 100vh;
     padding: 48px 32px;
     max-height: 330px;
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
     background-color: light-dark(#F0F0F0, #2A2D32);
     border-radius: 16px;
 }
