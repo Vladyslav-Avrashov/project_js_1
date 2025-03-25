@@ -65,17 +65,18 @@
   .ac-header {
     font-size: 20px;
     line-height: 1.6;
-    width: 600px;
+    min-width: 600px;
   }
 }
 
 @media (min-width: 1280px) {
   .faq-accordion {
     margin-top: 276px;
+    max-width: 592px;
   }
 
   .ac-header {
-    max-width: 527px;
+    min-width: 488px;
   }
 
   .faq-background {
