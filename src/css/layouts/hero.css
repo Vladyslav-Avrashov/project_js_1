@@ -1,5 +1,6 @@
  .hero{
 
+   padding-top: 184px;
     background-position: bottom 76px left 146px, top 10px right 24px;
     background-repeat: no-repeat, no-repeat;
    background-size:  356px 276px,  356px 276px;
@@ -33,7 +34,9 @@
 @media screen and (min-resolution: 192dpi) {
   .theme-light .hero {
     background-image: url('../../img/lite2x.png'), url('../../img/lite2x1.png');
-
+    .hero-name::after{
+      background-image: url("../../img/man2x.png");
+    }
   }
 
   .theme-dark .hero {
@@ -54,13 +57,6 @@
 
 
 
-.hero-photo{
-  display: flex;
-  align-items: center;
-  gap: 38px;
-  padding-top: 184px;
-
-}
 /*////////////////////////////////////////////////////////////////////*/
 
 
@@ -72,6 +68,8 @@ font-family: "Impact", sans-serif;
     line-height: 125%;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
   }
 
 @media (min-width: 768px){
@@ -86,10 +84,25 @@ font-family: "Impact", sans-serif;
   }
 }
 /*////////////////////////////////////////////////////////////////////*/
-.photo{
+ .hero-name-after{
+
+   display: flex;
+   align-items: center;
+
+
+ }
+.hero-name-after::after{
+
+  content: "";
+  width: 108px;
   height: 108px;
-border-radius: 3px;
+  margin-left: 40px;
+  background-image: url("../../img/hero-man.png");
+
+
+
 }
+
 @media (max-width: 1270px) {
 .photo{
   display: none;
@@ -217,7 +230,6 @@ color: light-dark(#292929,#F0F0F0);
   text-align: center;
   align-items: center;
   gap: 16px;
-
   font-weight: 400;
   font-size: 20px;
   line-height: 160%;
@@ -236,11 +248,9 @@ padding-top: 32px;
   height: 96px;
   background-color: light-dark(#BCDFD1,#14C57C);
   display: flex;
-
   align-items: center;
   justify-content: center;
 }
-
   .hero-scroll-focus:hover .hero-scroll,
   .hero-scroll-focus:hover .hero-scroll {
     left: 9px; /* Смещаем влево */
@@ -251,31 +261,22 @@ padding-top: 32px;
  .hero-scroll-focus:hover,
  .hero-scroll-focus:hover {
    background-color: light-dark(#14C57C ,#BCDFD1);
-
  }
-
-
-
 @media (min-width: 767px) {
   .hero-scroll-focus {
     margin-left: 155px;
     border-radius: 16px;
     width: 261px;
     height: 96px;
-    background-color: light-dark(#BCDFD1,#14C57C);
+    background-color: light-dark(#BCDFD1, #14C57C);
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 40px;
   }
-
-
-
 }
-
 /*///////////////////////////////////////////////////////////////////!*!//////////////////////////////////////////////////////////////////!**/
 @media (max-width: 767px) {
-
   .hero-scroll {
     position: absolute;
     left: -144px; /* Изначально видимый */
@@ -288,6 +289,5 @@ padding-top: 32px;
     margin-left: auto;
     margin-bottom: 40px;
   }
-
 }
 
