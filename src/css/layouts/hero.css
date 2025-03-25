@@ -62,21 +62,19 @@
 
 }
 /*////////////////////////////////////////////////////////////////////*/
-.hero-name{
-  font-weight: bold;
-}
-@media (min-width: 1px){
+
+
   .hero-name{
     color: light-dark(#292929, #F0F0F0);
-
+font-family: "Impact", sans-serif;
     font-weight: 400;
     font-size: 64px;
     line-height: 125%;
     letter-spacing: 0.03em;
     text-transform: uppercase;
   }
-}
-@media (min-width: 640px){
+
+@media (min-width: 768px){
   .hero-name{
 
     font-weight: 400;
@@ -100,8 +98,9 @@ border-radius: 3px;
 /*////////////////////////////////////////////////////////////////////*/
 
 
-@media (min-width: 1px) {
+
   .hero-name-under{
+    font-family: "Impact", sans-serif;
     font-weight: 400;
     font-size: 64px;
     line-height: 125%;
@@ -110,7 +109,7 @@ border-radius: 3px;
     color: light-dark(#00B068, #14C57C);
   }
 
-}
+
 /*////////////////////////////////////////////////////////////////////*/
 @media (min-width:768px){
   .hero-name-under{
@@ -130,12 +129,9 @@ border-radius: 3px;
   flex-direction: column;
   margin-top: 80px;
   margin-bottom: 72px;
+  font-family: "Poppins", sans-serif;
 }
-@media (min-width: 768px) {
-  .hero-button-text{
 
-  }
-}
 @media (min-width: 1280px) {
   .hero-button-text{
 flex-direction: row;
@@ -157,7 +153,6 @@ flex-direction: row;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: light-dark(#292929,#F0F0F0);
-
 }
 @media (min-width:768px){
 .hero-text{
@@ -222,6 +217,7 @@ color: light-dark(#292929,#F0F0F0);
   text-align: center;
   align-items: center;
   gap: 16px;
+
   font-weight: 400;
   font-size: 20px;
   line-height: 160%;
@@ -248,10 +244,15 @@ padding-top: 32px;
   .hero-scroll-focus:hover .hero-scroll,
   .hero-scroll-focus:hover .hero-scroll {
     left: 9px; /* Смещаем влево */
-
+    height: 18px;
     font-size: 18px;
     stroke: black;
   }
+ .hero-scroll-focus:hover,
+ .hero-scroll-focus:hover {
+   background-color: light-dark(#14C57C ,#BCDFD1);
+
+ }
 
 
 
@@ -269,11 +270,7 @@ padding-top: 32px;
   }
 
 
-  .hero-scroll-focus:hover,
-  .hero-scroll-focus:hover {
-    background-color: light-dark(#BCDFD1,#14C57C);
 
-  }
 }
 
 /*///////////////////////////////////////////////////////////////////!*!//////////////////////////////////////////////////////////////////!**/
