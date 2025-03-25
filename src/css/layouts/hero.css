@@ -92,19 +92,15 @@ font-family: "Impact", sans-serif;
 
  }
 .hero-name-after::after{
-
   content: "";
   width: 108px;
   height: 108px;
   margin-left: 40px;
   background-image: url("../../img/hero-man.png");
-
-
-
 }
 
 @media (max-width: 1270px) {
-.photo{
+.hero-name-after::after{
   display: none;
 }
 }
