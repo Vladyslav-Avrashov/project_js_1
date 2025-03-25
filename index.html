@@ -13,7 +13,7 @@
     rel="stylesheet" />
   <script type="module" crossorigin src="/project_js_1/index.js"></script>
   <link rel="modulepreload" crossorigin href="/project_js_1/assets/vendor-jn0Pskas.js">
-  <link rel="stylesheet" crossorigin href="/project_js_1/assets/index-AyI1Ink8.css">
+  <link rel="stylesheet" crossorigin href="/project_js_1/assets/index-BaOX-Xd8.css">
 </head>
 
 <body class="theme-light">
@@ -23,22 +23,21 @@
       >lloyd<span class="header-logo-style">jefferson.</span>
     </a>
 
-    <div class="header-wrap">
+    <div class="header-darkmode-wrap">
       <div class="darkmode-toggle">
         <input
           class="darkmode-toggle-input"
           type="checkbox"
           id="darkmode-toggle"
+          aria-label="Toggle dark mode"
         />
-        <label class="darkmode-toggle-label" for="darkmode-toggle"> </label>
+        <label class="darkmode-toggle-label" for="darkmode-toggle"></label>
       </div>
 
-      <nav class="header-nav">
+      <nav class="header-nav" role="navigation">
         <ul class="nav-menu-list">
           <li class="nav-menu-item">
-            <a class="header-link header-link-aline" href="./index.html"
-              >About me</a
-            >
+            <a class="header-link" href="./index.html">About me</a>
           </li>
           <li class="nav-menu-item">
             <a class="header-link" href="#portfolio">Projects</a>
@@ -49,7 +48,11 @@
         </ul>
       </nav>
 
-      <button class="open-mobile-menu-btn js-menu-btn" type="button">
+      <button
+        class="open-mobile-menu-btn"
+        type="button"
+        aria-label="Open mobile menu"
+      >
         <svg class="open-mobile-menu-icon" width="32" height="32">
           <use href="../img/icons.svg#menu-icon"></use>
         </svg>
@@ -57,6 +60,43 @@
     </div>
   </div>
 </header>
+
+<!--   Modal-box   -->
+
+<div class="modal-box">
+  <div class="container">
+    <div class="header-menu-wraper">
+      <a class="header-logo" href="#"
+        >lloyd<span class="header-logo-style">jefferson.</span>
+      </a>
+      <button
+        class="close-mobile-menu-btn"
+        type="button"
+        aria-label="Close mobile menu"
+      >
+        <svg class="close-mobile-menu-icon" width="32" height="32">
+          <use href="../img/icons.svg#close-icon"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-menu">
+      <nav class="mobile-menu-nav" role="navigation">
+        <ul class="mobile-menu-nav-list">
+          <li class="mobile-menu-nav-item">
+            <a class="mobile-menu-nav-item-link" href="#">About me</a>
+          </li>
+          <li class="mobile-menu-nav-item">
+            <a class="mobile-menu-nav-item-link" href="#">Projects</a>
+          </li>
+          <li class="mobile-menu-nav-item">
+            <a class="mobile-menu-nav-item-link" href="#">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
 
   <main>
     <link href="../css/layouts/hero.css" rel="stylesheet" />
