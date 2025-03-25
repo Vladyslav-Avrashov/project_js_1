@@ -167,7 +167,7 @@ flex-direction: row;
 }
 @media (min-width:768px){
 .hero-text{
-  width: 704px;
+  max-width: 704px;
   height: 96px;
   font-size: 20px;
   line-height: 160%;
@@ -178,7 +178,7 @@ flex-direction: row;
 
 
     margin-left: auto;
-    width: 592px;
+    max-width: 592px;
     height: 96px;
 
   }
