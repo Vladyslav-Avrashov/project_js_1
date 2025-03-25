@@ -1,6 +1,13 @@
 /*////////////////////MOBILE FIRST////////////////////*/
 footer.section{
   padding-bottom: 24px;
+  padding-top: 40px;
+}
+@media (min-width:1280px) {
+  footer.section{
+    margin-top: 82px;
+    padding-top: 0;
+  }
 }
 footer{
   border-top: 1px solid light-dark(#E4E5E6,
