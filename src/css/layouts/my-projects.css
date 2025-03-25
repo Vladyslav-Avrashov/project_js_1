@@ -143,4 +143,7 @@
   .project-cards-list {
     align-items: center;
   }
+  #projects section {
+    padding-bottom: 0;
+  }
 }
