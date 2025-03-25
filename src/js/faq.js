@@ -1,11 +1,10 @@
-import Accordion from 'accordion-js';
+import accordion from 'accordion-js';
 
-new Accordion('.accordion-container', {
-  duration: 1000,
+const faqAccordion = new accordion('.faq-accordion', {
+  openOnInit: [0],
   showMultiple: false,
   elementClass: 'ac',
   triggerClass: 'ac-trigger',
   panelClass: 'ac-text',
   activeClass: 'is-open',
-  openOnInit: [0],
 });
