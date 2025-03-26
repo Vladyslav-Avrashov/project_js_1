@@ -88,6 +88,13 @@
   letter-spacing: 0.03em;
   color: light-dark(#292929, #f0f0f0);
   text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-link:active {
+  color: #00b068;
 }
 
 .open-mobile-menu-btn {
@@ -177,7 +184,7 @@
   width: 91px;
   color: light-dark(#292929, #f0f0f0);
   text-decoration: none;
-  transition: color 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.5s ease;
 }
 
 .mobile-menu-nav-item-link:hover,
@@ -188,8 +195,13 @@
 
 .open-mobile-menu-icon {
   fill: light-dark(#292929, #f0f0f0);
+  stroke: light-dark(#292929, #f0f0f0);
 }
 
+.close-mobile-menu-icon {
+  fill: light-dark(#292929, #f0f0f0);
+  stroke: light-dark(#292929, #f0f0f0);
+}
 @media screen and (max-width: 767px) {
   .modal-box .container {
     position: static;

@@ -185,6 +185,7 @@
   line-height: 150%;
   letter-spacing: 0.03em;
   color: light-dark(#292929, #f0f0f0);
+  transition: color 0.5s ease;
 }
 /*////////////////////////////////////////////////////////////////////*/
 .hero-scroll {
@@ -216,14 +217,14 @@
   justify-content: center;
 }
 .hero-scroll-focus:hover .hero-scroll,
-.hero-scroll-focus:hover .hero-scroll {
+.hero-scroll-focus:focus .hero-scroll {
   left: 9px; /* Смещаем влево */
   height: 18px;
   font-size: 18px;
   stroke: black;
 }
 .hero-scroll-focus:hover,
-.hero-scroll-focus:hover {
+.hero-scroll-focus:focus {
   background-color: light-dark(#00b068, #14c57c);
 }
 @media (min-width: 767px) {
