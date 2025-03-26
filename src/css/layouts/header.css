@@ -196,8 +196,13 @@
 
 .open-mobile-menu-icon {
   fill: light-dark(#292929, #f0f0f0);
+  stroke: light-dark(#292929, #f0f0f0);
 }
 
+.close-mobile-menu-icon {
+  fill: light-dark(#292929, #f0f0f0);
+  stroke: light-dark(#292929, #f0f0f0);
+}
 @media screen and (max-width: 767px) {
   .modal-box .container {
     position: static;
