@@ -211,21 +211,21 @@
   border-radius: 16px;
   width: 261px;
   height: 96px;
-  background-color: light-dark(#bcdfd1, #14c57c);
+  background-color: light-dark(#bcdfd1, #009156);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .hero-scroll-focus:hover .hero-scroll,
-.hero-scroll-focus:hover .hero-scroll {
+.hero-scroll-focus:focus .hero-scroll {
   left: 9px; /* Смещаем влево */
   height: 18px;
   font-size: 18px;
   stroke: black;
 }
 .hero-scroll-focus:hover,
-.hero-scroll-focus:hover {
-  background-color: light-dark(#14c57c, #bcdfd1);
+.hero-scroll-focus:focus {
+  background-color: light-dark(#00b068, #14c57c);
 }
 @media (min-width: 767px) {
   .hero-scroll-focus {
@@ -233,7 +233,6 @@
     border-radius: 16px;
     width: 261px;
     height: 96px;
-    background-color: light-dark(#bcdfd1, #14c57c);
     display: flex;
     align-items: center;
     justify-content: center;
