@@ -1,4 +1,5 @@
 import iziToast from 'izitoast';
+import icon from '../img/icons.svg#close-icon';
 const emailInput = document.querySelector(".form_input");
 const textAreaInput = document.querySelector(".form_textarea");
 const label = document.querySelector(".form_input_icon");
@@ -73,7 +74,7 @@ const ShowModal = (title, message) => {
     backdrop.innerHTML = `
     <div class="modal">
         <svg class="modal_icon" aria-label="Close" width="24px" height="24px">
-            <use href="./img/icons.svg#close-icon"></use>
+            <use href="${icon}"></use>
         </svg>
         <p class="modal_title">${title}</p>
         <p class="modal_text">${message}</p>
