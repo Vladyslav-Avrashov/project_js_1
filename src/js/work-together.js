@@ -73,7 +73,7 @@ const ShowModal = (title, message) => {
     backdrop.innerHTML = `
     <div class="modal">
         <svg class="modal_icon" aria-label="Close" width="24px" height="24px">
-            <use href="../img/icons.svg#close-icon"></use>
+            <use href="./img/icons.svg#close-icon"></use>
         </svg>
         <p class="modal_title">${title}</p>
         <p class="modal_text">${message}</p>

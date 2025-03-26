@@ -157,6 +157,8 @@
     color: light-dark(#292929, #f0f0f0);
 }
 .form_input_icon{
+    width: 16px;
+    height: 16px;
     display: none;
     fill: #00B068;
     position: absolute;
@@ -268,7 +270,6 @@
     text-align: center;
     color: #00B068;
     margin-bottom: 16px;
-    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 .modal_text{
     font-family: 'Poppins', sans-serif;
