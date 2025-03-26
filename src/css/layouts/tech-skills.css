@@ -1,0 +1,77 @@
+.marquee {
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    text-transform: uppercase;
+    background-color: light-dark(#BCDFD1, #204136);
+    color: light-dark(#1E2023, #f0f0f0);
+    position: relative;
+    z-index: 2;   
+  }
+  @media screen and (min-width: 768px) {
+    .marquee{
+        font-size: 36px;
+    }
+  }
+  .marquee.second{
+    background-color: light-dark(#E4E5E6, #2A2D32);
+    transform: skewY(2deg);
+    position: relative;
+    z-index: 1; 
+  }
+
+  .marquee__inner {
+    display: flex;
+  }
+  
+  .marquee__line {
+    position: relative;
+    display: flex;
+    gap: 56px;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 32px 0;
+    min-width: 100%;
+    white-space: nowrap;
+    animation-name: marqueeLine;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  @media screen and (min-width: 768px) {
+    .marquee__line{
+        padding: 40px 0;
+    }
+  }
+  .second .marquee__line{
+    color: light-dark(#00B068, #14C57C);
+  }
+  .marquee__line span::after {
+    position: absolute;
+    content: "•";
+    color: light-dark(#00B068, #14C57C);
+    font-weight: bold;
+    margin-left: 16px;
+}
+.second .marquee__line span::after {
+    color: light-dark(#292929, #F0F0F0);
+}
+.marquee__line span:last-child{
+  margin-right: 56px;
+}
+.marquee__line span:last-child::after {
+    content: "•";
+    display: inline-block;
+    width: 56px;
+}
+  
+  @keyframes marqueeLine {
+    from {
+      transform: translateX(0);
+    }
+    
+    to {
+      transform: translateX(-50%);
+    }
+  }
